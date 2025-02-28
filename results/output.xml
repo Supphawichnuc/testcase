@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on darwin)" generated="2025-02-28T13:43:01.192587" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Homepage" source="/Users/supphawichnuc/Documents/testcase-main/tests/test_homepage.robot">
+<test id="s1-t1" name="01_Play Vido Promo" line="8">
+<kw name="Open Once Human Website" owner="base">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-28T13:43:01.286150" level="INFO">Opening browser 'chrome' to base url 'https://www.oncehuman.game/'.</msg>
+<arg>https://www.oncehuman.game/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-28T13:43:01.286045" elapsed="7.323851"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-28T13:43:08.611387" elapsed="0.380713"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Once Human</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-28T13:43:08.992223" elapsed="0.010484"/>
+</kw>
+<status status="PASS" start="2025-02-28T13:43:01.285643" elapsed="7.717164"/>
+</kw>
+<kw name="Play Video Promo" owner="homepage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css=video</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-28T13:43:09.003489" elapsed="0.011365"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-28T13:43:09.015156" level="INFO">Clicking element 'css=video'.</msg>
+<arg>css=video</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-28T13:43:09.015006" elapsed="0.048249"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-28T13:43:14.065530" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-28T13:43:09.063463" elapsed="5.002181"/>
+</kw>
+<status status="PASS" start="2025-02-28T13:43:09.003249" elapsed="5.062504"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-28T13:43:15.466315" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-81.png"&gt;&lt;img src="selenium-screenshot-81.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-02-28T13:43:14.065947" elapsed="1.400447"/>
+</kw>
+<kw name="Close Website" owner="base">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-28T13:43:15.466710" elapsed="0.121375"/>
+</kw>
+<status status="PASS" start="2025-02-28T13:43:15.466557" elapsed="0.121610"/>
+</kw>
+<status status="PASS" start="2025-02-28T13:43:01.285275" elapsed="14.303172"/>
+</test>
+<test id="s1-t2" name="02_Check Mobile View" line="14">
+<kw name="Open Once Human Website" owner="base">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-28T13:43:15.590373" level="INFO">Opening browser 'chrome' to base url 'https://www.oncehuman.game/'.</msg>
+<arg>https://www.oncehuman.game/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-28T13:43:15.590248" elapsed="1.896669"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-28T13:43:17.487186" elapsed="0.381146"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Once Human</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-28T13:43:17.868552" elapsed="0.007478"/>
+</kw>
+<status status="PASS" start="2025-02-28T13:43:15.590024" elapsed="2.286118"/>
+</kw>
+<kw name="Check Mobile View" owner="homepage">
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>375</arg>
+<arg>812</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2025-02-28T13:43:17.876759" elapsed="0.714718"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Once Human</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-28T13:43:18.591753" elapsed="0.012864"/>
+</kw>
+<status status="PASS" start="2025-02-28T13:43:17.876533" elapsed="0.728237"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-28T13:43:18.750491" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-82.png"&gt;&lt;img src="selenium-screenshot-82.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-02-28T13:43:18.605058" elapsed="0.145505"/>
+</kw>
+<kw name="Close Website" owner="base">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-28T13:43:18.750851" elapsed="0.093076"/>
+</kw>
+<status status="PASS" start="2025-02-28T13:43:18.750717" elapsed="0.093291"/>
+</kw>
+<status status="PASS" start="2025-02-28T13:43:15.588902" elapsed="3.255232"/>
+</test>
+<test id="s1-t3" name="03_Verify Social Media Links" line="20">
+<kw name="Open Once Human Website" owner="base">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-28T13:43:18.845229" level="INFO">Opening browser 'chrome' to base url 'https://www.oncehuman.game/'.</msg>
+<arg>https://www.oncehuman.game/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-28T13:43:18.845118" elapsed="2.050612"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-28T13:43:20.896301" elapsed="0.388323"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Once Human</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-28T13:43:21.284730" elapsed="0.007442"/>
+</kw>
+<status status="PASS" start="2025-02-28T13:43:18.844818" elapsed="2.447443"/>
+</kw>
+<kw name="Verify Social Media Links" owner="homepage">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=//a[contains(@href, 'facebook')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-28T13:43:21.292639" elapsed="0.007017"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=//a[contains(@href, 'twitter')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-28T13:43:21.299807" elapsed="0.005575"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=//a[contains(@href, 'discord')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-28T13:43:21.305477" elapsed="0.005426"/>
+</kw>
+<status status="PASS" start="2025-02-28T13:43:21.292449" elapsed="0.018517"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-28T13:43:21.739163" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-83.png"&gt;&lt;img src="selenium-screenshot-83.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-02-28T13:43:21.311081" elapsed="0.428156"/>
+</kw>
+<kw name="Close Website" owner="base">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-28T13:43:21.739527" elapsed="0.087001"/>
+</kw>
+<status status="PASS" start="2025-02-28T13:43:21.739385" elapsed="0.087276"/>
+</kw>
+<status status="PASS" start="2025-02-28T13:43:18.844285" elapsed="2.982470"/>
+</test>
+<status status="PASS" start="2025-02-28T13:43:01.193267" elapsed="20.633794"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test Homepage" id="s1" pass="3" fail="0" skip="0">Test Homepage</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
